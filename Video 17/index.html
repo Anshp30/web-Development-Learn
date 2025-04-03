@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* div{background-color: red;
+        } */
+        .red {
+            background-color: red;
+        }
+
+        #green {
+            background-color: green;
+        }
+
+        /* CHILD SELECTORS */
+        div>p {
+            color: blue;
+            background-color: rgb(51, 255, 0);
+        }
+
+        /* DECEDENT SELECTORS */
+        div p {
+            color: blue;
+            background-color: rgb(51, 255, 0);
+        }
+
+        /* UNIVERSAL SELECTORS */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Pseudo SELECTORS */
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            color:antiquewhite
+        }
+
+        A:active{
+            background-color: red;
+        }
+        A:hover{
+            background-color: black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="red"> i am Ansh
+        <article>
+            <P> I am computer Science Student</P>
+        </article>
+    </div>
+    <div id="green"> i am dev </div>
+     <a href="http://www.google.com">GO TO GOOGLE</a>
+     <a href="http://www.facebook.com">GO TO FACEBOOK</a>
+</body>
+
+</html>
